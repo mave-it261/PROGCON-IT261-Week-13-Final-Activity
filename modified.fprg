@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="array bitch ni rudim"/>
+        <attribute name="authors" value="pejir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-08 11:23:31 AM"/>
+        <attribute name="created" value="cGVqaXI7UlVESU1TOzIwMjYtMDktMTM7MDg6MTU6MTUgUE07MjI5Mw=="/>
+        <attribute name="edited" value="cGVqaXI7UlVESU1TOzIwMjYtMTAtMDg7MTE6MjM6MzEgQU07MzsyMzc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="colors" type="String" array="True" size="7"/>
+            <assign variable="colors" expression="createRainbow()"/>
+            <call expression="enterColors(colors)"/>
+            <call expression="displayColors(colors)"/>
+        </body>
+    </function>
+    <function name="createRainbow" type="String" variable="colors">
+        <parameters/>
+        <body>
+            <declare name="colors" type="String" array="True" size="7"/>
+        </body>
+    </function>
+    <function name="displayColors" type="None" variable="">
+        <parameters>
+            <parameter name="colors" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="String" array="False" size=""/>
+            <output expression="&quot;heres what you entered bro&quot;" newline="True"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="colors[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="enterColors" type="None" variable="">
+        <parameters>
+            <parameter name="colors" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="&quot;bruh would you mind entering the &quot; &#13;&#10; &amp; (i + 1) &amp; &quot; of the rainbow bro?&quot;" newline="True"/>
+                <input variable="colors[i]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
