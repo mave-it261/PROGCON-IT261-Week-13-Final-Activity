@@ -4,23 +4,17 @@
         <attribute name="name" value="array bitch ni rudim"/>
         <attribute name="authors" value="pejir"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-10-08 11:23:31 AM"/>
+        <attribute name="saved" value="2026-10-08 12:26:04 PM"/>
         <attribute name="created" value="cGVqaXI7UlVESU1TOzIwMjYtMDktMTM7MDg6MTU6MTUgUE07MjI5Mw=="/>
         <attribute name="edited" value="cGVqaXI7UlVESU1TOzIwMjYtMTAtMDg7MTE6MjM6MzEgQU07MzsyMzc1"/>
+        <attribute name="edited" value="bWF2ZXJpY2s7TUFWRVJJQ0stLUFDRVItOzIwMjYtMTAtMDg7MTI6MjY6MDQgUE07MjszMjQ5"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="colors" type="String" array="True" size="7"/>
-            <assign variable="colors" expression="createRainbow()"/>
             <call expression="enterColors(colors)"/>
             <call expression="displayColors(colors)"/>
-        </body>
-    </function>
-    <function name="createRainbow" type="String" variable="colors">
-        <parameters/>
-        <body>
-            <declare name="colors" type="String" array="True" size="7"/>
         </body>
     </function>
     <function name="displayColors" type="None" variable="">
@@ -28,7 +22,7 @@
             <parameter name="colors" type="String" array="True"/>
         </parameters>
         <body>
-            <declare name="i" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
             <output expression="&quot;heres what you entered bro&quot;" newline="True"/>
             <for variable="i" start="0" end="6" direction="inc" step="1">
                 <output expression="colors[i]" newline="True"/>
